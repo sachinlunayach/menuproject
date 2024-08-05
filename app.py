@@ -421,7 +421,7 @@ from werkzeug.utils import secure_filename
 @app.route('/insta', methods=['POST'])
 def insta():
     cl = Client()
-    cl.login("its.ankita25", "rahul1824")
+    cl.login("username", "your_password")
 
     if 'photo' not in request.files:
         return "No file part"
